@@ -194,7 +194,7 @@ if bb then
                 for _, path in ipairs(puzzle.Solution) do
                     totalNodes += #path
                 end
-                local delayTime = 2.55 / totalNodes
+                local delayTime = 3 / totalNodes
                 HintSystem:DrawSolutionOneByOne(puzzle, delayTime)
             end
         end)
@@ -202,5 +202,6 @@ if bb then
     end
 
 end
+
 
 
